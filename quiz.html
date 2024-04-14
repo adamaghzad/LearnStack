@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="icon" href="img/full-stack (2).png" type="image/icon">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<title>UserHub</title>
+</head>
+<style>
+    
+
+.assignment-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 24px;
+    
+    
+}
+
+.assignment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    font-family:'Poppins', sans-serif;
+    padding: 20px 0px;
+    -webkit-box-pack: justify;
+    position: relative;
+    flex-flow: wrap;
+     font-size: 16px;
+ margin-bottom: 10px;
+
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: #030101b0;
+
+
+}
+h1 {
+    margin: 0 0 80px 0;
+    color: #222222;
+    
+    
+    
+}
+
+
+.start-button {
+    background-color: #0056d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.grade-section {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.grade-section > div {
+    width: 40%;
+}
+
+.receive-grade h3,
+.user-grade h3 {
+    color: #333;
+}
+
+.receive-grade p,
+.user-grade p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+}
+.user-grade1{
+    border-left: #acaaaa solid 1px;
+    padding: 10px 20px;
+
+}
+.box{
+
+    background-color: #fffdfd;
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Your existing styles */
+
+/* Dark mode styles */
+.dark .assignment-container {
+  background-color: #0c0c1e;
+  color: #fff;
+}
+.dark .box{
+
+	background-color:#0c0c1e;
+}
+.dark h1,h2, h3 {
+  color: #fff;
+}
+
+.dark .assignment-header {
+  background-color: #0c0c1e;
+}
+
+.dark .start-button {
+  background-color: #0056d2;
+}
+
+.dark .grade-section {
+  border-color: #0c0c1e;
+  border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.dark .receive-grade h3,
+.dark .user-grade h3 {
+  color: #fff;
+}
+
+.dark .receive-grade p,
+.dark .user-grade p {
+  color: #ccc;
+}
+
+.dark .user-grade1 {
+  border-left-color: #ffffff;
+}
+
+.dark .box {
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+
+</style>
+
+<body>
+
+
+	<!-- SIDEBAR -->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">UserHub</span>
+		</a>
+		<ul class="side-menu top">
+			<li >
+				<a href="index.html">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="Cours.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Cours</span>
+				</a>
+			</li>
+			
+			<li class="active">
+				<a href="quiz.html">
+					<i class='bx bxs-message-dots' ></i>
+					<span class="text">Quiz</span>
+				</a>
+			</li>
+			<li>
+				<a href="profile.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">profile</span>
+				</a>
+			</li>
+			
+			
+		</ul>
+		<ul class="side-menu">
+			
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+		<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>																																							
+
+			</div>
+            <div class="box">
+					<div class="header-container">
+                        <h1>Self review: complete HTML tutorial</h1>           
+				</div>
+                <div class="assignment-container">
+                    <div class="assignment-header">
+                        <h2>Submit your assignment</h2>
+                        <a href="QuizQut.html" class="start-button">Start assignment</a>
+                    </div>
+                    <div class="grade-section">
+                        <div class="receive-grade">
+                            <h3>Receive grade</h3>
+                            <p>To Pass 80% or higher</p>
+                        </div>
+                        <div class="user-grade1" >
+                        <div class="user-grade">
+                            <h3>Your grade</h3>
+                            <p>-</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="script.js"></script>
+</body>
+</html>

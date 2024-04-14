@@ -1,0 +1,127 @@
+.assignment-container {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    padding: 24px;
+    
+    
+}
+
+.assignment-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    font-family:'Poppins', sans-serif;
+    padding: 20px 0px;
+    -webkit-box-pack: justify;
+    position: relative;
+    flex-flow: wrap;
+     font-size: 16px;
+ margin-bottom: 10px;
+
+}
+
+h2, h3 {
+    margin: 0;
+    padding: 0;
+    color: #030101b0;
+
+
+}
+h1 {
+    margin: 0 0 80px 0;
+    color: #222222;
+    
+    
+    
+}
+
+
+.start-button {
+    background-color: #0056d2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.grade-section {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.grade-section > div {
+    width: 40%;
+}
+
+.receive-grade h3,
+.user-grade h3 {
+    color: #333;
+}
+
+.receive-grade p,
+.user-grade p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+}
+.user-grade1{
+    border-left: #acaaaa solid 1px;
+    padding: 10px 20px;
+
+}
+.box{
+
+    background-color: #fffdfd;
+border-radius: 8px;
+padding: 20px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Your existing styles */
+
+/* Dark mode styles */
+.dark .assignment-container {
+  background-color: #121212;
+  color: #fff;
+}
+
+.dark h1 {
+  color: #fff;
+}
+
+.dark .assignment-header {
+  background-color: #333;
+}
+
+.dark .start-button {
+  background-color: #0056d2;
+}
+
+.dark .grade-section {
+  border-color: #0c0c1e;
+}
+
+.dark .receive-grade h3,
+.dark .user-grade h3 {
+  color: #fff;
+}
+
+.dark .receive-grade p,
+.dark .user-grade p {
+  color: #ccc;
+}
+
+.dark .user-grade1 {
+  border-left-color: #0c0c1e;
+}
+
+.dark .box {
+  box-shadow: 0 2px 4px #0c0c1e
+}

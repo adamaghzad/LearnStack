@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Forget_password</title>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="signUpForm">
+                <h1>Email has been sent</h1>
+
+                <span>Please check your email inbox for a password recovery link. Don't forget to check your spam
+                    folder</span>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form id="signInForm">
+                <h1>Found your Account</h1>
+                <div class="social-icons">
+
+                </div>
+                <p>Enter Your CIN Or Your Email TO Get New Password</p>
+
+                <input type="email" placeholder="Email/CIN" />
+                <button id="getNewPasswordButton" class="hidden"  type="submit" style="color: rgb(248, 248, 248);    border-color: #ffffff;
+         background-color: #2da0a8; ">Get New Password</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to kickstart your journey towards coding excellence</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>
+                        Register with your personal details to use all of site features
+                    </p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById("signInForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Perform your sign-in validation here
+    var email = document.getElementById("email").value;
+    // Example validation (replace with your own logic)
+    if (email === "example@email.com") { // Assuming successful login condition
+        // Show the "Get New Password" button
+        document.getElementById("getNewPasswordButton").classList.remove("hidden");
+        // Hide the sign-in form
+        document.getElementById("signInForm").classList.add("hidden");
+    } else {
+        alert("Invalid email or password. Please try again."); // Show an error message
+    }
+        });
+        document.getElementById("signUpForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Perform your sign-up validation here
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Example validation (replace with your own logic)
+            if (name.trim() !== "" && email.trim() !== "" && password.trim() !== "") {
+                window.location.href = "index.html"; // Redirect to index.html
+            } else {
+                alert("Please fill in all fields."); // Show an error message
+            }
+        });
+
+    </script>
+    <script src="login.js"></script>
+</body>
+
+</html>

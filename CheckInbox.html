@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="icon" href="img/full-stack (2).png" type="image/icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    <title>PassForgetHub</title>
+</head>
+<body>
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">PassForgetHub</span>
+        </a>
+        <ul class="side-menu top">
+            <li >
+                <a href="login.html">
+                    <i class='bx bxs-log-in-circle' ></i>
+                    <span class="text">Login</span>
+                </a>
+            </li>
+           
+            <li >
+                <a href="signin.html">
+                    <i class='bx bxs-key' ></i>
+                    <span class="text">Singin</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="ForgetPss1.html">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <span class="text">Forgetpassword</span>
+                </a>
+            </li>
+           
+        </ul>
+        
+    </section>
+    <section id="content">
+       
+            	<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+     
+        <main>
+           
+                <div class="form-wrapper">
+                    <h2 class="form-title">Email has been sent</h2>
+                    <p class="form-detail">Please check your email inbox for a password recovery link. Don't forget to check your spam folder</p>
+                   
+						<li>
+                           <a >Back to :</a>
+							<a class="active" href="login.html">Login Page</a>
+						</li>
+                    
+                    </div> 
+</main>
+
+</section>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</body>
+
+<script src="signin.js"></script>    
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="img/full-stack (2).png" type="image/icon">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signin.css">
+    <title>PassForgetHub</title>
+</head>
+<body>
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <i class='bx bxs-smile'></i>
+            <span class="text">PassForgetHub</span>
+        </a>
+        <ul class="side-menu top">
+            <li >
+                <a href="login.html">
+                    <i class='bx bxs-log-in-circle' ></i>
+                    <span class="text">Login</span>
+                </a>
+            </li>
+           
+            <li >
+                <a href="signin.html">
+                    <i class='bx bxs-key' ></i>
+                    <span class="text">Singin</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="ForgetPss1.html">
+                    <i class='bx bxs-lock-alt' ></i>
+                    <span class="text">Forgetpassword</span>
+                </a>
+            </li>
+           
+        </ul>
+        
+    </section>
+    <section id="content">
+       
+            	<!-- NAVBAR -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>
+			<a href="#" class="profile">
+				<img src="img/people.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+     
+        <main>
+    <div class="form-wrapper">
+        <h2 class="form-title">ChangePassword</h2>
+        <p class="form-detail">Learn on your own time from top universities and businesses.</p>
+        <form id="contact-form" action="#">
+            <div class="form-group">
+                <label for="email" class="required">New Password</label>
+                <input type="email" id="email" placeholder="New Password" required>
+            </div>
+            <div class="form-group">
+                <label for="text" class="required">Confirme Password</label>
+                <input type="text" id="text" placeholder="Confirme Password" required>
+            </div>
+            
+            <button id="submit" type="submit" class="btn btn-blue mb-4">Change Password</button>                </form>
+           </form>
+        </div>
+       
+</main>
+
+</section>
+
+<!-- contact section ends -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Initialize EmailJS with your user ID
+      emailjs.init("TDN99diaVDkhvpKbt");
+
+      // Submit form
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        // Send form data using EmailJS
+        emailjs.sendForm('service_oswl3a9', 'template_2fwc9me', this)
+          .then(function (response) {
+            console.log('SUCCESS!', response.status, response.text);
+            document.getElementById('contact-form').reset();
+            alert("Form Submitted Successfully");
+          }, function (error) {
+            console.log('FAILED...', error);
+            alert("Form Submission Failed! Try Again");
+          });
+      });
+    });
+  </script>
+
+
+</body>
+
+<script src="signin.js"></script>    
+<script src="script.js"></script>
+</body>
+</html>

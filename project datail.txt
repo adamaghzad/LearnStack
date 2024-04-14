@@ -1,0 +1,9 @@
+"Create an educational website tailored for aspiring programmers, designed to guide beginners through the fundamentals of coding all the way to becoming proficient full-stack developers. The platform will feature a user-friendly interface, complete with a login form and sign-up form, along with a 'forgot password' functionality for seamless account management.
+
+The core of the website will be its algorithm-driven roadmap, ensuring users progress through the curriculum efficiently. Users will have access to courses, but the platform will intelligently unlock new content based on their performance. Only when a user completes a course and passes the associated quiz with a score of 80% or higher will the next set of courses be revealed.
+
+Additionally, the website will include a comprehensive dashboard, showcasing the user's progress, including the number of courses completed and recent activities. To enhance user experience, the platform will also offer a dark mode option for comfortable browsing.
+
+Furthermore, the site will feature a live chat support system, enabling users to seek assistance whenever needed. Built using HTML, CSS, and JavaScript, this project aims to provide an immersive learning experience while fostering a supportive online community for aspiring developers.
+
+For the Contact form, we will integrate emailjs to ensure seamless communication and interaction with users."
